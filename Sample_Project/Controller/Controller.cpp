@@ -13,5 +13,7 @@ Controller::Controller(){
 }
 
 void Controller::start(){
-    
+    for(int i = 0; i < 10; i++){
+        std::cout << "This is the - " << i + 1 << " time in the loop." << std::endl;
+    }
 }
