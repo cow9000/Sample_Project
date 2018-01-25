@@ -15,6 +15,10 @@ class Controller{
 public:
     Controller();
     void start();
+private:
+    void fillArray();
+    void printArray();
+    char *arrayOfChars;
 };
 
 #endif /* Controller_hpp */
