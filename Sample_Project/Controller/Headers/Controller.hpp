@@ -10,6 +10,7 @@
 #define Controller_hpp
 
 #include <iostream>
+#include <string>
 
 class Controller{
 public:
@@ -18,7 +19,9 @@ public:
 private:
     void fillArray();
     void printArray();
-    char *arrayOfChars;
+    int *arrayOfInts;
+    std::string *arrayOfStrings;
+    double *arrayOfDoubles;
 };
 
 #endif /* Controller_hpp */

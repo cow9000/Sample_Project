@@ -9,7 +9,9 @@
 #include "Headers/Controller.hpp"
 
 Controller::Controller(){
-    arrayOfChars = new char[10];
+    arrayOfInts = new int[10];
+    arrayOfStrings = new std::string[10];
+    arrayOfDoubles = new double[10];
 }
 
 void Controller::start(){
@@ -17,16 +19,22 @@ void Controller::start(){
         std::cout << "This is the - " << i + 1 << " time in the loop." << std::endl;
     }
     fillArray();
+    
+    
 }
 
 void Controller::fillArray(){
     for(int i = 0; i < 10; i++){
-        arrayOfChars[i] = 'a';
+        arrayOfInts[i] = i;
+        arrayOfDoubles[i] = 2.483*i;
+        arrayOfStrings[i] = "AWDIAHWDOAWHDIO";
     }
     printArray();
 }
 void Controller::printArray(){
     for(int i = 0; i < 10; i++){
-        std::cout << arrayOfChars[i] << std::endl;
+        std::cout << arrayOfInts[i] << std::endl;
+        std::cout << arrayOfDoubles[i] << std::endl;
+        std::cout << arrayOfStrings[i] << std::endl;
     }
 }
