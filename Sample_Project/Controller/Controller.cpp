@@ -12,6 +12,17 @@ Controller::Controller(){
     arrayOfInts = new int[10];
     arrayOfStrings = new std::string[10];
     arrayOfDoubles = new double[10];
+    
+    
+    
+}
+
+void Controller::findMaxAndMin(){
+    
+}
+
+void Controller::testArray(){
+    
 }
 
 void Controller::start(){
@@ -38,3 +49,4 @@ void Controller::printArray(){
         std::cout << arrayOfStrings[i] << std::endl;
     }
 }
+

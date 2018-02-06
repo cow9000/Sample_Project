@@ -19,6 +19,10 @@ public:
 private:
     void fillArray();
     void printArray();
+    void findMaxAndMin();
+    void testArray();
+    
+    
     int *arrayOfInts;
     std::string *arrayOfStrings;
     double *arrayOfDoubles;
