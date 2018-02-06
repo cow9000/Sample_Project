@@ -47,6 +47,25 @@ void Controller::findMaxAndMin(){
     }
     
     
+    Array<CrimeData> data(myData.size());
+    for(int i = 0; i < myData.size(); i++){
+        data[i] = myData[i];
+    }
+    
+    Timer vectorTimer;
+    Timer arrayTimer;
+    
+    vectorTimer.startTimer();
+    std::cout << myData[424] << std::endl;
+    vectorTimer.stopTimer();
+    vectorTimer.displayInformation();
+    
+    arrayTimer.startTimer();
+    std::cout << data[424] << std::endl;
+    arrayTimer.stopTimer();
+    arrayTimer.displayInformation();
+    
+    
 }
 
 void Controller::testArray(){
