@@ -10,7 +10,7 @@ void Timer::resetTimer(){
   executionTime = 0;
 }
 
-void Timer::startTime(){
+void Timer::startTimer(){
   executionTime = clock();
 }
 
