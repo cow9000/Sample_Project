@@ -9,7 +9,7 @@
       <w>310</w>
       <h>200</h>
     </coordinates>
-    <panel_attributes>LinearNode
+    <panel_attributes>LinearNode&lt;Type&gt;
 --
 Data Members
 
@@ -17,9 +17,9 @@ Data Members
 --
 Methods/Constructors
 
-+LinearNode()
-+LinearNode(Type)
-+LinearNode(Type, LinearNode&lt;Type&gt;*)
++LinearNode() : constructor
++LinearNode(Type) : constructor
++LinearNode(Type, LinearNode&lt;Type&gt;*) : constructor
 +setNextNode(LinearNode&lt;Type&gt;*) : void
 +getNextNode() : LinearNode&lt;Type&gt;*
 
@@ -29,13 +29,13 @@ Methods/Constructors
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>320</x>
+      <x>330</x>
       <y>110</y>
-      <w>240</w>
+      <w>220</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>220.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -45,7 +45,7 @@ Methods/Constructors
       <w>310</w>
       <h>200</h>
     </coordinates>
-    <panel_attributes>Node
+    <panel_attributes>Node&lt;Type&gt;
 --
 Data Members
 
@@ -53,8 +53,8 @@ Data Members
 --
 Methods/Constructors
 
-+Node()
-+Node(Type)
++Node() : constructor
++Node(Type) : constructor
 +SetData(Type) : void
 +getData() : Type
 
