@@ -18,7 +18,7 @@ std::vector<CrimeData> FileController::readCrimeDataToVector(std::string filenam
     
     if(dataFile.is_open()){
         while(!dataFile.eof()){
-            getline(dataFile, currentCSVLine, '\r');
+            getline(dataFile, currentCSVLine, '\n');
             
             if(rowCount != 0){
                 if(currentCSVLine.length() != 0 ){

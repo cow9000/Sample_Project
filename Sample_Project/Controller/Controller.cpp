@@ -13,11 +13,39 @@ Controller::Controller(){
     arrayOfStrings = new std::string[10];
     arrayOfDoubles = new double[10];
     
-    
+    findMaxAndMin();
     
 }
 
 void Controller::findMaxAndMin(){
+    Timer searchTimer;
+    searchTimer.startTimer();
+    std::vector<CrimeData> myData = FileController::readCrimeDataToVector("/Users/dvaw7563/Documents/C++/Sample_Project/Sample_Project/Data/crime.csv");
+    
+    int minIndex = 0;
+    int maxIndex = 0;
+    
+    for(int index = 1; index < myData.size(); index++){
+        if(myData[minIndex] > myData[index]){
+            minIndex = index;
+        }
+        
+        else if(myData[maxIndex] < myData[index]){
+            maxIndex = index;
+        }
+        
+    }
+    
+    searchTimer.stopTimer();
+    std::cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << std::endl;
+    std::cout << "The largest Crime stat is at " << maxIndex << " and it is: " << maxIndex << std::endl;
+    searchTimer.displayInformation();
+    
+    
+    for(int i = 200; i < 216; i++){
+        std::cout << myData[i] << std::endl;
+    }
+    
     
 }
 

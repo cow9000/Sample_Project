@@ -11,6 +11,9 @@
 
 #include <iostream>
 #include <string>
+#include "../Tools/Timer.hpp"
+#include "FileController.hpp"
+#include "../../Model/Structures/Array.hpp"
 
 class Controller{
 public:
