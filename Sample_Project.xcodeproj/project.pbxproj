@@ -31,8 +31,8 @@
 		71062D11201A5EDB002A0217 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		7168666B202A2D6400F52CAB /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		7168666D202A2D6F00F52CAB /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
-		71686672202A2E5E00F52CAB /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
-		71686674202A2E7A00F52CAB /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		71686677202A317200F52CAB /* Array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		71686678202A317200F52CAB /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +94,21 @@
 		7168666F202A2E3900F52CAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				71686673202A2E6E00F52CAB /* Structures */,
+				71686676202A317200F52CAB /* Structures */,
 			);
 			name = Model;
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		71686673202A2E6E00F52CAB /* Structures */ = {
+		71686676202A317200F52CAB /* Structures */ = {
 			isa = PBXGroup;
 			children = (
-				71686674202A2E7A00F52CAB /* Array.hpp */,
-				71686672202A2E5E00F52CAB /* Node.hpp */,
+				71686677202A317200F52CAB /* Array.hpp */,
+				71686678202A317200F52CAB /* Node.hpp */,
 			);
-			path = Structures;
-			sourceTree = "<group>";
+			name = Structures;
+			path = Sample_Project/Structures;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
