@@ -7,19 +7,19 @@
       <x>540</x>
       <y>20</y>
       <w>310</w>
-      <h>200</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>LinearNode&lt;Type&gt;
 --
-Data Members
 
-# next : LinearNode&lt;Type&gt;*
+- LinearNode&lt;Type&gt;* : next
+
 --
-Methods/Constructors
 
 +LinearNode() : constructor
 +LinearNode(Type) : constructor
 +LinearNode(Type, LinearNode&lt;Type&gt;*) : constructor
+
 +setNextNode(LinearNode&lt;Type&gt;*) : void
 +getNextNode() : LinearNode&lt;Type&gt;*
 
@@ -29,29 +29,67 @@ Methods/Constructors
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
+      <x>470</x>
       <y>110</y>
-      <w>220</w>
+      <w>90</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
+      <x>540</x>
+      <y>300</y>
+      <w>310</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>List&lt;Type&gt;
+--
+
+# size : int
+
+--
+
++add(Type item) : void
++addAtIndex(int index, Type item) : void
++remove(int index) : Type
++getFromIndex(int index) : Type
+
++getSize() const : int
++getFront() : LinearNode&lt;Type&gt;*
++getEnd() : LinearNode&lt;Type&gt;*
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>240</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>170</x>
       <y>20</y>
       <w>310</w>
-      <h>200</h>
+      <h>230</h>
     </coordinates>
     <panel_attributes>Node&lt;Type&gt;
 --
-Data Members
 
 # data : Type
+
 --
-Methods/Constructors
 
 +Node() : constructor
 +Node(Type) : constructor
