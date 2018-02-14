@@ -47,7 +47,7 @@ void LinearNode<Type>::setNextNode(LinearNode<Type> * nextNodePointer){
 
 template <class Type>
 LinearNode<Type> * LinearNode<Type>::getNextNode(){
-    return next
+    return next;
 }
 
 #endif /* LinearNode_h */

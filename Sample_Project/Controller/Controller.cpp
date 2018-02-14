@@ -13,10 +13,14 @@ Controller::Controller(){
     arrayOfStrings = new std::string[10];
     arrayOfDoubles = new double[10];
     
-    ArrayTester a;
-    a.testArrayUse();
+    LinkedListTester a;
+    a.testListBasics();
+    a.testListWithData();
     
-    findMaxAndMin();
+    //ArrayTester a;
+    //a.testArrayUse();
+    
+    //findMaxAndMin();
     
 }
 

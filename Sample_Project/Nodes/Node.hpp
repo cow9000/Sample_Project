@@ -24,12 +24,12 @@ Node<Type> :: Node(Type data){
 }
 
 template <class Type>
-Node<Type>:: setData(Type data){
+void Node<Type>::setData(Type data){
     this->data = data;
 }
 
 template <class Type>
-Type Node<type> :: getData(){
+Type Node<Type> :: getData(){
     return data;
 }
 

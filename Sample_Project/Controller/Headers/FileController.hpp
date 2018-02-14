@@ -10,15 +10,18 @@
 #define FileController_hpp
 
 #include "../../Data/CrimeData.hpp"
+#include "../../Model/Structures/LinkedList.hpp"
 #include <vector>
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <fstream>
 
 class FileController{
 public:
     static std::vector<CrimeData> readCrimeDataToVector(string filename);
+    static LinkedList<CrimeData> readDataToList(string filename);
 };
 
 #endif /* FileController_hpp */

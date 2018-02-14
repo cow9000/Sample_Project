@@ -1,3 +1,4 @@
+
 //
 //  LinkedList.hpp
 //  Sample_Project
@@ -125,6 +126,43 @@ Type LinkedList<Type>::remove(int index){
     
     
 }
+
+template <class Type>
+Type LinkedList<Type>::getFromIndex(int index){
+    assert(index >= 0  && index < this->size);
+    
+    LinearNode<Type>* current = front;
+    LinearNode<Type>* nodeToGet = nullptr;
+    LinearNode<Type>* previous = nullptr;
+    
+    Type data;
+    
+    if(index == 0){
+        nodeToGet = front;
+    }
+    else{
+        for(int position = 0; position < index; position++){
+            previous = current;
+            current = current->getNextNode();
+        }
+        
+        nodeToGet = current;
+        if(index == this->size-1){
+            end = previous;
+        }else{
+            current = nodeToGet->getNextNode();
+        }
+        
+    }
+    
+    data = nodeToGet->getData();
+    return data;
+    
+    
+}
+
+
+
 template <class Type>
 LinearNode<Type> * LinkedList<Type>::getEnd(){
     return this->end;
@@ -135,7 +173,7 @@ LinearNode<Type> * LinkedList<Type>::getFront(){
 }
 template <class Type>
 int LinkedList<Type>::getSize() const{
-    return size;
+    return this->size;
 }
 
 #endif /* LinkedList_hpp */
