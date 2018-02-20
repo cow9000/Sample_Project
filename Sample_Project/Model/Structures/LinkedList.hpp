@@ -130,32 +130,16 @@ Type LinkedList<Type>::remove(int index){
 template <class Type>
 Type LinkedList<Type>::getFromIndex(int index){
     assert(index >= 0  && index < this->size);
-    
-    LinearNode<Type>* current = front;
-    LinearNode<Type>* nodeToGet = nullptr;
-    LinearNode<Type>* previous = nullptr;
-    
     Type data;
+    LinearNode<Type>* current = front;
     
-    if(index == 0){
-        nodeToGet = front;
-    }
-    else{
-        for(int position = 0; position < index; position++){
-            previous = current;
-            current = current->getNextNode();
-        }
-        
-        nodeToGet = current;
-        if(index == this->size-1){
-            end = previous;
-        }else{
-            current = nodeToGet->getNextNode();
-        }
-        
+    for(int i =0; i < index; i++){
+        current = current->getNextNode();
     }
     
-    data = nodeToGet->getData();
+    
+    
+    data = current->getData();
     return data;
     
     
