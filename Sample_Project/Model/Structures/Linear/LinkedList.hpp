@@ -23,10 +23,10 @@ public:
     LinearNode<Type> * getFront();
     LinearNode<Type> * getEnd();
     
-    void add(Type item);
-    void addAtIndex(int index, Type item);
-    Type getFromIndex(int index);
-    Type remove(int index);
+    virtual void add(Type item);
+    virtual void addAtIndex(int index, Type item);
+    virtual Type getFromIndex(int index);
+    virtual Type remove(int index);
     
 protected:
     LinearNode<Type> * front;
@@ -39,6 +39,7 @@ LinkedList<Type>::LinkedList(){
     this->end = nullptr;
     this->size = 0;
 }
+
 template <class Type>
 LinkedList<Type>::~LinkedList(){
     LinearNode<Type> * destroyStructure = front;
@@ -48,6 +49,7 @@ LinkedList<Type>::~LinkedList(){
         destroyStructure = front;
     }
 }
+
 template <class Type>
 void LinkedList<Type>::add(Type item) {
     LinearNode<Type> * newData = new LinearNode<Type>(item);

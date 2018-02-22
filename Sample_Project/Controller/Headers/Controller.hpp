@@ -13,7 +13,7 @@
 #include <string>
 #include "../Tools/Timer.hpp"
 #include "FileController.hpp"
-#include "../../Model/Structures/Array.hpp"
+#include "../../Model/Structures/Linear/Array.hpp"
 #include "../../Testers/LinkedListTester.hpp"
 #include "../../Testers/ArrayTester.hpp"
 

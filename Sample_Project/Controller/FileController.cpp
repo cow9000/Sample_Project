@@ -7,7 +7,7 @@
 //
 
 #include "Headers/FileController.hpp"
-#include "../Model/Structures/LinkedList.hpp"
+#include "../Model/Structures/Linear/LinkedList.hpp"
 std::vector<CrimeData> FileController::readCrimeDataToVector(std::string filename){
     
     std::vector<CrimeData> crimeVector;
