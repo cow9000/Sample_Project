@@ -5,7 +5,6 @@
 #include <assert.h>
 #include <iostream>
 
-#include "../../Model/Nodes/DoubleNode.hpp"
 
 
 class Timer

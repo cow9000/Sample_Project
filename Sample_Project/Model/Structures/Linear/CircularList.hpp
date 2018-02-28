@@ -37,9 +37,9 @@ public:
 
 template <class Type>
 CircularList<Type> :: CircularList(){
-    front = nullptr;
-    end = nullptr;
-    size = 0;
+    this->front = nullptr;
+    this->end = nullptr;
+    this->size = 0;
 }
 
 template <class Type>
@@ -53,7 +53,7 @@ CircularList<Type>::~CircularList(){
 }
 
 template <class Type>
-DoubleNode<Type> * CircularNode<Type>::findNode(int index){
+DoubleNode<Type> * CircularList<Type>::findNode(int index){
     assert(index >= 0 && index < this->size);
     DoubleNode<Type> * nodeToFind;
     if(index < this->size/2){
@@ -152,12 +152,12 @@ int CircularList<Type>::getSize() const{
 }
 
 template <class Type>
-LinearNode<Type> * CircularNode<Type> :: getFront(){
+LinearNode<Type> * CircularList<Type> :: getFront(){
     return nullptr;
 }
 
 template <class Type>
-LinearNode<Type> * CircularNode<Type> :: getEnd(){
+LinearNode<Type> * CircularList<Type> :: getEnd(){
     return nullptr;
 }
 
