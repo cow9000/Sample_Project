@@ -10,8 +10,7 @@
 #define DoubleNode_hpp
 
 template <class Type>
-class DoubleNode : public Node<Type>
-{
+class DoubleNode : public Node<Type>{
 protected:
     DoubleNode<Type> * previous;
     DoubleNode<Type> * next;
@@ -29,15 +28,13 @@ public:
 };
 
 template <class Type>
-DoubleNode<Type> :: DoubleNode() : Node<Type>()
-{
+DoubleNode<Type> :: DoubleNode() : Node<Type>(){
     previous = nullptr;
     next = nullptr;
 }
 
 template <class Type>
-DoubleNode<Type> :: DoubleNode(Type data) : Node<Type>(data)
-{
+DoubleNode<Type> :: DoubleNode(Type data) : Node<Type>(data){
     previous = nullptr;
     next = nullptr;
 }
