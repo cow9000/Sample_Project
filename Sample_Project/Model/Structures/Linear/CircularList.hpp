@@ -12,6 +12,17 @@
 #include "List.hpp"
 #include "../../Nodes/DoubleNode.hpp"
 
+template <class Type>
+class CircularList : public List<Type>{
+private:
+    DoubleNode<Type> * front;
+    DoubleNode<Type> * end;
+    
+    DoubleNode<Type> * findNode(int index);
+public:
+    CircularList();
+    ~CircularList();
+};
 
 
 #endif /* CircularList_hpp */
