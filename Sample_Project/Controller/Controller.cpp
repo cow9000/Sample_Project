@@ -9,9 +9,6 @@
 #include "Headers/Controller.hpp"
 
 Controller::Controller(){
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
     
     
 }
@@ -72,11 +69,9 @@ void Controller::testArray(){
 }
 
 void Controller::start(){
-    for(int i = 0; i < 10; i++){
-        std::cout << "This is the - " << i + 1 << " time in the loop." << std::endl;
-    }
-    fillArray();
-    
+    RecursionTester test;
+    test.testRecursionNumbers();
+    test.testRecursionString();
     
 }
 

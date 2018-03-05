@@ -11,6 +11,8 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
+#include <stdlib.h>     /* srand, rand */
 #include "../Controller/Tools/Timer.hpp"
 
 using namespace std;
@@ -19,6 +21,8 @@ class RecursionTester{
 private:
     int fib(int start);
     string mystery(string word);
+    string stringMesserarounder(string word);
+    string scramble(string word);
 public:
     void testRecursionNumbers();
     void testRecursionString();
