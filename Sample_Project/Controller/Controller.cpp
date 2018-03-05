@@ -9,18 +9,10 @@
 #include "Headers/Controller.hpp"
 
 Controller::Controller(){
-    arrayOfInts = new int[10];
-    arrayOfStrings = new std::string[10];
-    arrayOfDoubles = new double[10];
+    RecursionTester test;
+    test.testRecursionNumbers();
+    test.testRecursionString();
     
-    LinkedListTester a;
-    a.testListBasics();
-    a.testListWithData();
-    
-    //ArrayTester a;
-    //a.testArrayUse();
-    
-    //findMaxAndMin();
     
 }
 
