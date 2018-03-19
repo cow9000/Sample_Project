@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		71062D0F201A5ECE002A0217 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71062D0D201A5ECE002A0217 /* Controller.cpp */; };
 		71062D12201A5EDB002A0217 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71062D11201A5EDB002A0217 /* Runner.cpp */; };
+		711DBA2A205AE95300932CA4 /* SortingTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 711DBA28205AE95300932CA4 /* SortingTester.cpp */; };
 		713268A6204DC595005AA07D /* Recursion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713268A4204DC595005AA07D /* Recursion.cpp */; };
 		7168666C202A2D6400F52CAB /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7168666B202A2D6400F52CAB /* Timer.cpp */; };
 		7168667B202A321000F52CAB /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71686679202A321000F52CAB /* FileController.cpp */; };
@@ -35,6 +36,8 @@
 		71062D0D201A5ECE002A0217 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		71062D0E201A5ECE002A0217 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		71062D11201A5EDB002A0217 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		711DBA28205AE95300932CA4 /* SortingTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTester.cpp; sourceTree = "<group>"; };
+		711DBA29205AE95300932CA4 /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
 		713268A4204DC595005AA07D /* Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recursion.cpp; sourceTree = "<group>"; };
 		713268A5204DC595005AA07D /* Recursion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Recursion.hpp; sourceTree = "<group>"; };
 		715A900D203F464500549E3B /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		71730B4020472FFC0065266E /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		71730B41204734550065266E /* TestingStacksAndQueues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestingStacksAndQueues.cpp; sourceTree = "<group>"; };
 		71730B42204734550065266E /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
+		7174FED82060362000B39B62 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 		71973CCD2034BB5E00D82FB7 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		71973CCE2034BB5E00D82FB7 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		71C5E7E220322AE0008B8656 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				71730B42204734550065266E /* TestingStacksAndQueues.hpp */,
 				713268A4204DC595005AA07D /* Recursion.cpp */,
 				713268A5204DC595005AA07D /* Recursion.hpp */,
+				711DBA28205AE95300932CA4 /* SortingTester.cpp */,
+				711DBA29205AE95300932CA4 /* SortingTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 		7168668C202A34B800F52CAB /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				7174FED72060360D00B39B62 /* NonLinear */,
 				715A900C203F45C300549E3B /* Linear */,
 			);
 			path = Structures;
@@ -192,6 +199,14 @@
 				71686692202A3F2C00F52CAB /* Node.uxf */,
 			);
 			path = UML;
+			sourceTree = "<group>";
+		};
+		7174FED72060360D00B39B62 /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+				7174FED82060362000B39B62 /* Graph.h */,
+			);
+			path = NonLinear;
 			sourceTree = "<group>";
 		};
 		71F0D607202CCF3000CDAEF4 /* Nodes */ = {
@@ -266,6 +281,7 @@
 				71062D0F201A5ECE002A0217 /* Controller.cpp in Sources */,
 				71062D12201A5EDB002A0217 /* Runner.cpp in Sources */,
 				71973CCF2034BB5E00D82FB7 /* LinkedListTester.cpp in Sources */,
+				711DBA2A205AE95300932CA4 /* SortingTester.cpp in Sources */,
 				71730B43204734550065266E /* TestingStacksAndQueues.cpp in Sources */,
 				713268A6204DC595005AA07D /* Recursion.cpp in Sources */,
 				71686688202A33E500F52CAB /* ArrayTester.cpp in Sources */,
