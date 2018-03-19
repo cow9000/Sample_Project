@@ -52,5 +52,32 @@ public:
     int costTraversal(Graph<Type> &graph, int vertex);
 };
 
+template <class Type>
+const int Graph<Type> :: MAXIMUM;
+
+template <class Type>
+Graph <Type>::Graph(){
+    this->vertexCount = 0;
+}
+
+template <class Type>
+int Graph<Type> :: size() const{
+    return vertexCount;
+}
+//Left hand side operator gives reference
+template <class Type>
+Type& graph<Type> :: operator[](int vertex){
+    assert(vertex < vertexCount);
+    return graphData[vertex];
+}
+
+//Right hand side operator gives copy
+template <class Type>
+Type graph<Type> :: operator[](int vertex) const{
+    assert(vertex < vertexCount);
+    return graphData[vertex];
+}
+
+
 
 #endif /* Graph_hpp */
