@@ -171,7 +171,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex){
 }
 
 template <class Type>
-void Graph<Type> :: depthFirstTraversal(Graph<Type> & curremtGraph, int vertex, bool * visited){
+void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited){
     std::set<int> connections = currentGraph.neighbors(vertex);
     std::set<int>::iterator setIterator;
     visited[vertex] = true;
@@ -197,12 +197,14 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex){
     
     vertexQueue.push(vertex);
     while(!vertexQueue.empty()){
-        connections = currentGraph.neighbors(vertexQueue.front());
+        
+        int currentIndex = vertexQueue.front();
+        connections = currentGraph.neighbors(currentIndex);
         vertexQueue.pop();
         
         for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++){
             if(!visited[*setIterator]){
-                cost += weightCostMatrix[vertex][*setIterator];
+                cost += weightCostMatrix[currentIndex][*setIterator];
                 visited[*setIterator] = true;
                 vertexQueue.push(*setIterator);
             }
@@ -236,6 +238,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
         }
     }
 }
+
 
 
 #endif /* Graph_hpp */
