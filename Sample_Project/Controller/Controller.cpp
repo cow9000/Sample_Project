@@ -69,9 +69,8 @@ void Controller::testArray(){
 }
 
 void Controller::start(){
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
+    GraphTester t;
+    t.testGraphs();
     
 }
 

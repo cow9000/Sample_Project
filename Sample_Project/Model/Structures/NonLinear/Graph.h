@@ -17,9 +17,9 @@ using namespace std;
 template <class Type>
 class Graph{
 private:
-    static const int MAXIMUM = 20;
-    bool adjacencyMatrix [MAXIMUM][MINIMUM];
-    int weightCostMatrix [MAXIMUM][MINIMUM];
+    static const int MAXIMUM = 200;
+    bool adjacencyMatrix [MAXIMUM][MAXIMUM];
+    int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type GraphData[MAXIMUM];
     int vertexCount;
     void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
@@ -43,7 +43,7 @@ public:
     
     //Check connections
     bool hasUndirectedConnection(int source, int target) const;
-    bool areConnected(int source int target) const;
+    bool areConnected(int source, int target) const;
     std::set<int> neighbors(int vertex) const;
     
     //Traversals
@@ -66,16 +66,16 @@ int Graph<Type> :: size() const{
 }
 //Left hand side operator gives reference
 template <class Type>
-Type& graph<Type> :: operator[](int vertex){
+Type& Graph<Type> :: operator[](int vertex){
     assert(vertex < vertexCount);
-    return graphData[vertex];
+    return GraphData[vertex];
 }
 
 //Right hand side operator gives copy
 template <class Type>
-Type graph<Type> :: operator[](int vertex) const{
+Type Graph<Type> :: operator[](int vertex) const{
     assert(vertex < vertexCount);
-    return graphData[vertex];
+    return GraphData[vertex];
 }
 
 template <class Type>
@@ -89,17 +89,17 @@ void Graph<Type> :: addVertex(const Type& value){
         adjacencyMatrix[otherVertexNumber][otherVertexNumber] = false;
     }
     
-    graphData[newVertexNumber] = value;
+    GraphData[newVertexNumber] = value;
 }
 
 template <class Type>
-void Graph<Type> :: removedEdge(int source, int target){
+void Graph<Type> :: removeEdge(int source, int target){
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    adjacenccyMatrix[source][target] = false;
+    adjacencyMatrix[source][target] = false;
 }
 
 template <class Type>
-void Graph<Type> :: removedEdgeUndirected(int source, int target){
+void Graph<Type> :: removeEdgeUndirected(int source, int target){
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     adjacencyMatrix[source][target] = false;
     adjacencyMatrix[target][source] = false;
@@ -129,8 +129,8 @@ void Graph<Type> :: addEdgeCost(int source, int target, int cost){
 template <class Type>
 void Graph<Type> :: addEdgeUndirected(int source, int target){
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    adjancencyMatrix[source][target] = true;
-    adjancencyMatrix[target][source] = true;
+    adjacencyMatrix[source][target] = true;
+    adjacencyMatrix[target][source] = true;
 }
 
 template <class Type>
@@ -156,7 +156,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const{
     
     for(int i = 0; i < vertexCount; i++){
         if(adjacencyMatrix[vertex][i]){
-            vertexNeighbors.insert(index);
+            vertexNeighbors.insert(i);
         }
     }
     return vertexNeighbors;
@@ -166,8 +166,8 @@ template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex){
     bool visitedVertices[MAXIMUM];
     assert(vertex < currentGraph.size());
-    std::fill_n(visitedVerticies, currentGraph.size(), false);
-    depthFirstTraversal(currentGraph, vertex, visitedVerticies);
+    std::fill_n(visitedVertices, currentGraph.size(), false);
+    depthFirstTraversal(currentGraph, vertex, visitedVertices);
 }
 
 template <class Type>
@@ -193,7 +193,7 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex){
     std::queue<int> vertexQueue;
     
     std::fill_n(visited, currentGraph.size(), false);
-    visted[vertex] = true;
+    visited[vertex] = true;
     
     vertexQueue.push(vertex);
     while(!vertexQueue.empty()){
