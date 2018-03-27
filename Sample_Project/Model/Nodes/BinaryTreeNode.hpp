@@ -9,6 +9,8 @@
 #ifndef BinaryTreeNode_hpp
 #define BinaryTreeNode_hpp
 
+#include "Node.hpp"
+
 template <class Type>
 class BinaryTreeNode : public Node<Type>{
 private:
@@ -61,9 +63,13 @@ template <class Type>
 void BinaryTreeNode<Type>::setRootNode(BinaryTreeNode<Type> * node){
     this->root = node;
 }
+
+template <class Type>
 void BinaryTreeNode<Type>::setRightNode(BinaryTreeNode<Type> * node){
     this->right = node;
 }
+
+template <class Type>
 void BinaryTreeNode<Type>::setLeftNode(BinaryTreeNode<Type> * node){
     this->left = node;
 }

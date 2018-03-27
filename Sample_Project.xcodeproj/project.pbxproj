@@ -18,6 +18,7 @@
 		71730B43204734550065266E /* TestingStacksAndQueues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71730B41204734550065266E /* TestingStacksAndQueues.cpp */; };
 		71973CCF2034BB5E00D82FB7 /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71973CCD2034BB5E00D82FB7 /* LinkedListTester.cpp */; };
 		71AC55C9206571E900FE5BDC /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71AC55C7206571E900FE5BDC /* GraphTester.cpp */; };
+		71C8444B206ACA12009578DC /* BinaryTreeTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71C84449206ACA12009578DC /* BinaryTreeTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +68,8 @@
 		71AC55C8206571E900FE5BDC /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		71C5E7E220322AE0008B8656 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		71C84448206ABEC5009578DC /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
+		71C84449206ACA12009578DC /* BinaryTreeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTreeTester.cpp; sourceTree = "<group>"; };
+		71C8444A206ACA12009578DC /* BinaryTreeTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeTester.hpp; sourceTree = "<group>"; };
 		71F0D606202CCF1300CDAEF4 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +180,8 @@
 				711DBA29205AE95300932CA4 /* SortingTester.hpp */,
 				71AC55C7206571E900FE5BDC /* GraphTester.cpp */,
 				71AC55C8206571E900FE5BDC /* GraphTester.hpp */,
+				71C84449206ACA12009578DC /* BinaryTreeTester.cpp */,
+				71C8444A206ACA12009578DC /* BinaryTreeTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				71062D0F201A5ECE002A0217 /* Controller.cpp in Sources */,
 				71062D12201A5EDB002A0217 /* Runner.cpp in Sources */,
 				71973CCF2034BB5E00D82FB7 /* LinkedListTester.cpp in Sources */,
+				71C8444B206ACA12009578DC /* BinaryTreeTester.cpp in Sources */,
 				71AC55C9206571E900FE5BDC /* GraphTester.cpp in Sources */,
 				711DBA2A205AE95300932CA4 /* SortingTester.cpp in Sources */,
 				71730B43204734550065266E /* TestingStacksAndQueues.cpp in Sources */,
