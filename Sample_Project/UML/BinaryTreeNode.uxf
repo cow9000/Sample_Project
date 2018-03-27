@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>160</x>
-      <y>210</y>
+      <x>80</x>
+      <y>90</y>
       <w>310</w>
       <h>230</h>
     </coordinates>
@@ -27,8 +27,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>610</x>
-      <y>210</y>
+      <x>510</x>
+      <y>90</y>
       <w>420</w>
       <h>320</h>
     </coordinates>
@@ -56,13 +56,43 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>320</y>
-      <w>170</w>
+      <x>380</x>
+      <y>200</y>
+      <w>150</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 Extends</panel_attributes>
-    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>470</y>
+      <w>420</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>Tree&lt;Type&gt;
+--
+# root : BinaryTreeNode&lt;Type&gt;
+
+--
+*Informational Methods*
+/+ getSize() : int/
+/+ getHeight() : int/
+/+ isComplete() : bool/
+/+ isBalanced() : bool/
+
+*Data Methods*
+/+ insert(Type) : void/
+/+ contains(Type) : bool/
+/+ remove(Type) : void/
+
+*Traversals*
+/+ inOrderTraversal() : void/
+/+ preOrderTraversal() : void/
+/+ postOrderTraversal() : void/</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
