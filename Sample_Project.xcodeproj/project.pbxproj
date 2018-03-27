@@ -66,6 +66,7 @@
 		71AC55C7206571E900FE5BDC /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
 		71AC55C8206571E900FE5BDC /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		71C5E7E220322AE0008B8656 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		71C84448206ABEC5009578DC /* BinaryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinaryTreeNode.hpp; sourceTree = "<group>"; };
 		71F0D606202CCF1300CDAEF4 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +221,7 @@
 				71730B3F20472FFC0065266E /* LinearNode.hpp */,
 				71730B4020472FFC0065266E /* Node.hpp */,
 				71730B3D20472DEB0065266E /* DoubleNode.hpp */,
+				71C84448206ABEC5009578DC /* BinaryTreeNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
