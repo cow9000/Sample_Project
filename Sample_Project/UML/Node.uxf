@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
-      <y>100</y>
+      <x>530</x>
+      <y>50</y>
       <w>310</w>
       <h>230</h>
     </coordinates>
@@ -29,8 +29,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>190</y>
+      <x>460</x>
+      <y>140</y>
       <w>90</w>
       <h>30</h>
     </coordinates>
@@ -40,8 +40,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>640</x>
-      <y>380</y>
+      <x>530</x>
+      <y>330</y>
       <w>310</w>
       <h>270</h>
     </coordinates>
@@ -68,8 +68,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>780</x>
-      <y>320</y>
+      <x>670</x>
+      <y>270</y>
       <w>30</w>
       <h>80</h>
     </coordinates>
@@ -79,8 +79,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>270</x>
-      <y>100</y>
+      <x>160</x>
+      <y>50</y>
       <w>310</w>
       <h>230</h>
     </coordinates>
@@ -102,8 +102,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>570</x>
-      <y>190</y>
+      <x>460</x>
+      <y>140</y>
       <w>90</w>
       <h>30</h>
     </coordinates>
