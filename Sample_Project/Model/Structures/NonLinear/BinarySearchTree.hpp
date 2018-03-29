@@ -128,22 +128,30 @@ void BinarySearchTree<Type>::setRoot(BinaryTreeNode<Type> * root){
 
 template <class Type>
 void BinarySearchTree<Type>::inOrderTraversal(){
-    
+    inOrderTraversal(this->root);
 }
 
 template <class Type>
 void BinarySearchTree<Type>::preOrderTraversal(){
-    
+    preOrderTraversal(this->root);
 }
 
 template <class Type>
 void BinarySearchTree<Type>::postOrderTraversal(){
-    
+    postOrderTraversal(this->root);
 }
 
 template <class Type>
-void BinarySearchTree<Type>::demoTraversalSteps(BinaryTreeNode<Type> * node){
-    
+void BinarySearchTree<Type>::demoTraversalSteps(BinaryTreeNode<Type> * start){
+    if(start != nullptr){
+        std::cout << "check if left is here" << std::endl;
+        demoTraversalSteps(start->getLeftNode());
+        std::cout << "Return to root" << std::endl;
+        std::cout << "check if right is here" << std::endl;
+        demoTraversalSteps(start->getRightNode());
+    }else{
+        std::cout << "Reached nullptr - if on right it's back up the recursive call stack" << std::endl;
+    }
 }
 
 template <class Type>
