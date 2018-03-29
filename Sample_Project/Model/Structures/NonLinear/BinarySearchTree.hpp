@@ -53,6 +53,7 @@ public:
     Type findMinimum();
     Type findMaximum();
 };
+
 template <class Type>
 int BinarySearchTree<Type>::calculateSize(BinaryTreeNode<Type> * startNode){
     
@@ -64,16 +65,16 @@ int BinarySearchTree<Type>::calculateHeight(BinaryTreeNode<Type> * startNode){
 }
 
 template <class Type>
-bool BinarySearchTree<Type>::isBalanced(BinarySearchTree<Type> * startNode){
+bool BinarySearchTree<Type>::isBalanced(BinaryTreeNode<Type> * startNode){
     
 }
 
 template <class Type>
-bool BinarySearchTree<Type>::isComplete(BinarySearchTree<Type> * startNode, int index, int size){
+bool BinarySearchTree<Type>::isComplete(BinaryTreeNode<Type> * startNode, int index, int size){
     
 }
 template <class Type>
-void BinarySearchTree<Type>::inOrderTraversal(BinarySearchTree<Type> * inStart){
+void BinarySearchTree<Type>::inOrderTraversal(BinaryTreeNode<Type> * inStart){
     
 }
 
@@ -88,16 +89,16 @@ void postOrderTraversal(BinarySearchTree<Type> postStart){
 }
 
 template <class Type>
-BinarySearchTree<Type> * BinarySearchTree<Type>::getRightMostChild(BinarySearchTree<Type> * current){
+  BinaryTreeNode<Type> * BinarySearchTree<Type>::getRightMostChild(BinaryTreeNode<Type> * current){
     
 }
 template <class Type>
-BinarySearchTree<Type> * BinarySearchTree<Type>::getLeftMostChild(BinarySearchTree<Type> * current){
+  BinaryTreeNode<Type> * BinarySearchTree<Type>::getLeftMostChild(BinaryTreeNode<Type> * current){
     
 }
 
 template <class Type>
-void BinarySearchTree<Type>::removeNode(BinarySearchTree<Type> * removeMe){
+void BinarySearchTree<Type>::removeNode(BinaryTreeNode<Type> * removeMe){
     
 }
 
@@ -112,12 +113,12 @@ BinarySearchTree<Type>::~BinarySearchTree(){
 }
 
 template <class Type>
-BinarySearchTree<Type> * BinarySearchTree<Type>::getRoot(){
+BinaryTreeNode<Type> * BinarySearchTree<Type>::getRoot(){
     
 }
 
 template <class Type>
-void BinarySearchTree<Type>::setRoot(BinarySearchTree<Type> * root){
+void BinarySearchTree<Type>::setRoot(BinaryTreeNode<Type> * root){
     
 }
 
@@ -137,7 +138,7 @@ void BinarySearchTree<Type>::postOrderTraversal(){
 }
 
 template <class Type>
-void BinarySearchTree<Type>::demoTraversalSteps(BinarySearchTree<Type> * node){
+void BinarySearchTree<Type>::demoTraversalSteps(BinaryTreeNode<Type> * node){
     
 }
 
@@ -168,6 +169,34 @@ bool BinarySearchTree<Type>::contains(Type value){
 
 template <class Type>
 void BinarySearchTree<Type>::insert(Type itemToInsert){
+    BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
+    BinaryTreeNode<Type> * previous = nullptr;
+    BinaryTreeNode<Type> * current = this->root;
+    
+    if(current == nullptr){
+        this->root = insertMe;
+    }else{
+        while(current != nullptr){
+            previous = current;
+            if(itemToInsert < current->getData()){
+                current = current->getLeftNode();
+            }else if(itemToInsert > current->getData()){
+                current = current->getRightNode();
+            }else{
+                cerr << "Item exists already - exiting insert" << endl;
+                delete insertMe;
+                return;
+            }
+        }
+        
+        if(previous->getData() > itemToInsert){
+            previous->setLeftNode(insertMe);
+        }else{
+            previous->setRightNode(insertMe);
+        }
+        insertMe->setRootNode(previous);
+        
+    }
     
 }
 
