@@ -56,35 +56,39 @@ public:
 
 template <class Type>
 int BinarySearchTree<Type>::calculateSize(BinaryTreeNode<Type> * startNode){
-    
+    return 0;
 }
 
 template <class Type>
 int BinarySearchTree<Type>::calculateHeight(BinaryTreeNode<Type> * startNode){
-    
+    return 0;
 }
 
 template <class Type>
 bool BinarySearchTree<Type>::isBalanced(BinaryTreeNode<Type> * startNode){
-    
+    return true;
 }
 
 template <class Type>
 bool BinarySearchTree<Type>::isComplete(BinaryTreeNode<Type> * startNode, int index, int size){
-    
+    return true;
 }
 template <class Type>
 void BinarySearchTree<Type>::inOrderTraversal(BinaryTreeNode<Type> * inStart){
+    if(inStart != nullptr){
+        inOrderTraversal(inStart->getLeftNode());
+        cout << inStart->getData() << endl;
+        inOrderTraversal(inStart->getRightNode());
+    }
+}
+
+template <class Type>
+void BinarySearchTree<Type>::preOrderTraversal(BinaryTreeNode<Type> * preStart){
     
 }
 
 template <class Type>
-void preOrderTraversal(BinarySearchTree<Type> * preStart){
-    
-}
-
-template <class Type>
-void postOrderTraversal(BinarySearchTree<Type> postStart){
+void BinarySearchTree<Type>::postOrderTraversal(BinaryTreeNode<Type> * postStart){
     
 }
 

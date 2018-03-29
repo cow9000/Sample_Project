@@ -19,7 +19,7 @@ public:
     virtual int getSize() = 0;
     virtual int getHeight() = 0;
     virtual bool isComplete() = 0;
-    virtual bool isBlanaced() = 0;
+    virtual bool isBalanced() = 0;
     
     virtual void insert(Type data) = 0;
     virtual bool contains(Type data) = 0;
