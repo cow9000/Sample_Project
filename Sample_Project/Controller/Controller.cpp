@@ -69,9 +69,7 @@ void Controller::testArray(){
 }
 
 void Controller::start(){
-    GraphTester t;
-    t.testGraphs();
-    
+    BinaryTreeTester t;
 }
 
 void Controller::fillArray(){

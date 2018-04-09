@@ -183,7 +183,7 @@ void BinarySearchTree<Type>::removeNode(BinaryTreeNode<Type> * removeMe){
         if(previous != nullptr && removeMe->getData() < previous->getData()){
             previous->setLeftNode(removeMe);
         }else if(previous != nullptr && removeMe->getData() > previous->getData()){
-            previous>setRightNode(removeMe);
+            previous->setRightNode(removeMe);
         }
         removeMe->setRootNode(previous);
         delete temp;
@@ -288,7 +288,7 @@ bool BinarySearchTree<Type>::isComplete(){
 
 template <class Type>
 bool BinarySearchTree<Type>::isBalanced(){
-
+    return isBalanced(this->root);
 }
 
 template <class Type>

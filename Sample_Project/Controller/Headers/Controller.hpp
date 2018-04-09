@@ -14,6 +14,7 @@
 #include "../Tools/Timer.hpp"
 #include "FileController.hpp"
 #include "../../Model/Structures/Linear/Array.hpp"
+#include "../../Testers/BinaryTreeTester.hpp"
 #include "../../Testers/LinkedListTester.hpp"
 #include "../../Testers/ArrayTester.hpp"
 #include "../../Testers/Recursion.hpp"
