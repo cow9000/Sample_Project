@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sample_Project/Testers/BinaryTreeTester.cpp"
-            timestampString = "544995965.884976"
+            timestampString = "545167071.646886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sample_Project/Testers/BinaryTreeTester.cpp"
-            timestampString = "544995965.885142"
+            timestampString = "545167071.6472861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -42,13 +42,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sample_Project/Testers/BinaryTreeTester.cpp"
-            timestampString = "544995965.885245"
+            timestampString = "545167071.647648"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
             landmarkName = "BinaryTreeTester::doTreeStuff()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sample_Project/Model/Nodes/BinaryTreeNode.hpp"
+            timestampString = "545167071.6479779"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "getLeftNode()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BinaryTreeNode&lt;std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt; &gt;::getLeftNode()"
+                  moduleName = "Sample_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvaw7563/Documents/C++/Sample_Project/Sample_Project/Controller/Headers/../../Testers/../Model/Structures/NonLinear/../../Nodes/BinaryTreeNode.hpp"
+                  timestampString = "545167071.989043"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BinaryTreeNode&lt;int&gt;::getLeftNode()"
+                  moduleName = "Sample_Project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvaw7563/Documents/C++/Sample_Project/Sample_Project/Controller/Headers/../../Testers/../Model/Structures/NonLinear/../../Nodes/BinaryTreeNode.hpp"
+                  timestampString = "545167071.990326"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
