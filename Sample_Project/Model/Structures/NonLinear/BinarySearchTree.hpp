@@ -231,12 +231,12 @@ void BinarySearchTree<Type>::destroyTree(BinaryTreeNode<Type> * node){
 
 template <class Type>
 BinaryTreeNode<Type> * BinarySearchTree<Type>::getRoot(){
-    
+    return this->root;
 }
 
 template <class Type>
 void BinarySearchTree<Type>::setRoot(BinaryTreeNode<Type> * root){
-    
+    this->root = root;
 }
 
 template <class Type>
