@@ -235,8 +235,8 @@ BinaryTreeNode<Type> * BinarySearchTree<Type>::getRoot(){
 }
 
 template <class Type>
-void BinarySearchTree<Type>::setRoot(BinaryTreeNode<Type> * root){
-    this->root = root;
+void BinarySearchTree<Type>::setRoot(BinaryTreeNode<Type> * node){
+    this->root = node;
 }
 
 template <class Type>
