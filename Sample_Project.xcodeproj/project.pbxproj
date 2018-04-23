@@ -56,6 +56,7 @@
 		7168668E202A34FB00F52CAB /* Array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Array.hpp; path = Sample_Project/Model/Structures/Linear/Array.hpp; sourceTree = SOURCE_ROOT; };
 		7168668F202A370100F52CAB /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		71686692202A3F2C00F52CAB /* Node.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Node.uxf; sourceTree = "<group>"; };
+		71701160208E50DA0067EE65 /* N_AryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = N_AryTreeNode.hpp; sourceTree = "<group>"; };
 		71730B3D20472DEB0065266E /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		71730B3E20472FAD0065266E /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		71730B3F20472FFC0065266E /* LinearNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
@@ -232,6 +233,7 @@
 				71730B3F20472FFC0065266E /* LinearNode.hpp */,
 				71730B4020472FFC0065266E /* Node.hpp */,
 				71730B3D20472DEB0065266E /* DoubleNode.hpp */,
+				71701160208E50DA0067EE65 /* N_AryTreeNode.hpp */,
 				71C84448206ABEC5009578DC /* BinaryTreeNode.hpp */,
 			);
 			path = Nodes;
