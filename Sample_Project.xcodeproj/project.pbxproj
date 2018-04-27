@@ -43,6 +43,7 @@
 		711DBA29205AE95300932CA4 /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
 		713268A4204DC595005AA07D /* Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recursion.cpp; sourceTree = "<group>"; };
 		713268A5204DC595005AA07D /* Recursion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Recursion.hpp; sourceTree = "<group>"; };
+		7149D13620939F6B00BD536A /* HashNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HashNode.hpp; sourceTree = "<group>"; };
 		715A900D203F464500549E3B /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		715A900E203F493600549E3B /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		7168666B202A2D6400F52CAB /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
@@ -235,6 +236,7 @@
 				71730B3D20472DEB0065266E /* DoubleNode.hpp */,
 				71701160208E50DA0067EE65 /* N_AryTreeNode.hpp */,
 				71C84448206ABEC5009578DC /* BinaryTreeNode.hpp */,
+				7149D13620939F6B00BD536A /* HashNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
