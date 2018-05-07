@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>440</y>
+      <x>30</x>
+      <y>470</y>
       <w>310</w>
       <h>230</h>
     </coordinates>
@@ -27,19 +27,19 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>440</y>
+      <x>390</x>
+      <y>470</y>
       <w>310</w>
       <h>230</h>
     </coordinates>
     <panel_attributes>HashNode&lt;Type&gt;
 --
 
-# key : long
+- key : long
 
 --
 
-+HashNodee() : constructor
++HashNode() : constructor
 +HashNode(Type) : constructor
 
 +getKey() const : long
@@ -50,25 +50,25 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>410</x>
-      <y>50</y>
+      <x>400</x>
+      <y>80</y>
       <w>310</w>
       <h>320</h>
     </coordinates>
     <panel_attributes>HashTable&lt;Type&gt;
 --
 
-# size : long
-# capacity : long
-# loadFactor : double
+- size : long
+-capacity : long
+- loadFactor : double
 
 --
 
-# getNextPrime() : long
-# isPrime(long) : bool
-# resize() : void
-# findPosition(HashNode&lt;Type&gt;*) : long
-# handleCollision(long) : long
+- getNextPrime() : long
+- isPrime(long) : bool
+- resize() : void
+- findPosition(HashNode&lt;Type&gt;*) : long
+- handleCollision(long) : long
 
 +Hashtable() : constructor
 +~Hashtable() : destructor
@@ -84,22 +84,23 @@
     <id>Relation</id>
     <coordinates>
       <x>330</x>
-      <y>500</y>
-      <w>90</w>
-      <h>30</h>
+      <y>540</y>
+      <w>80</w>
+      <h>50</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;30.0;60.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>500</y>
-      <w>50</w>
-      <h>30</h>
+      <x>520</x>
+      <y>390</y>
+      <w>40</w>
+      <h>100</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;20.0;10.0</additional_attributes>
   </element>
 </diagram>
