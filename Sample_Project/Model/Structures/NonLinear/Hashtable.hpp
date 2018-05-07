@@ -11,6 +11,9 @@
 
 #include "../../Nodes/HashNode.hpp"
 
+#include <cmath>
+#include <assert.h>
+
 template <class Type>
 class Hashtable{
 private:
@@ -31,7 +34,31 @@ public:
     
     void insert(Type data);
     long getSize();
+    
+    HashNode<Type> * get(long index);
+    bool contains(HashNode<Type> * value);
 };
+
+template <class Type>
+HashNode<Type> * HashTable<Type> :: get(long index){
+    assert(index < capacity);
+    return internalStorage[index];
+}
+
+template <class Type>
+bool HashTable<Type> :: contains(HashNode<Type> * value){
+    if(internalStorage[findPosition(value)]->getData() == value->getData()){
+        return true;
+    }
+    
+    long other = handleCollision(findPosition(value));
+    if(internalStorage[other]->getData() == value->getData){
+        return true;
+    }
+    
+    return false;
+    
+}
 
 template <class Type>
 Hashtable<Type> :: Hashtable(){
@@ -48,7 +75,22 @@ Hashtable<Type> :: ~Hashtable(){
 
 template <class Type>
 bool Hashtable<Type>::isPrime(long current){
-    return false;
+    if(current <= 1){
+        return false;
+    }
+    else if(current == 2|| current ==3){
+        return true;
+    }else if(current %2 == 0){
+        return false;
+    }else{
+        for(int next = 3; next <= sqrt(current) + 1; next+=2){
+            if(current % next == 0 ){
+                return false;
+            }
+        }
+        return true;
+    }
+    
 }
 
 template <class Type>
@@ -79,7 +121,12 @@ long Hashtable<Type>::getSize(){
 
 template <class Type>
 long Hashtable<Type>::getNextPrime(){
-    return -1;
+    long nextPrime = (this->capacity * 2) + 1;
+    
+    while(!isPrime(nextPrime)){
+        nextPrime += 2;
+    }
+    return nextPrime;
 }
 
 template <class Type>
